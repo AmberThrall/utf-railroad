@@ -15,6 +15,14 @@ impl Diagram {
     pub fn gap_size(self, size: usize) -> Self {
         Self(self.0.gap_size(size))
     }
+
+    pub fn next_row(self) -> Self {
+        Self(self.0.next_row())
+    }
+
+    pub fn num_rows(&self) -> usize {
+        self.0.num_rows()
+    }
 }
 
 impl Default for Diagram {
@@ -47,6 +55,7 @@ impl Node for Diagram {
             }
 
             ret += lines[y];
+
             if y == 1 {
                 for _ in 0..self.0.gap_size { ret += "─"; }
                 ret += "╢";
