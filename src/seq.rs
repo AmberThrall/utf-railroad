@@ -74,7 +74,7 @@ impl Node for Sequence {
         }
 
         if self.nodes.len() > 1 {
-            height += self.nodes.len();
+            height += self.nodes.len() - 1;
         }
 
         height
