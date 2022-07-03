@@ -1,6 +1,6 @@
 [package]
 name = "utf-railroad"
-version = "1.0.0"
+version = "1.1.0"
 authors = ["Amber Thrall <amber@thrall.me>"]
 description = "Generate text railroad diagrams in rust."
 readme = "README.md"
